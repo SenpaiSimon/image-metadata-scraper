@@ -1,5 +1,5 @@
 name: Metadata from Image Scraper
-requires: PythonDepManager
+#requires: PythonDepManager
 description: Scraper Metadata from images and add them
 version: 1.0.0
 exec:
