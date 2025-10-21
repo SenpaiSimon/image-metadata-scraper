@@ -16,3 +16,4 @@ hooks:
     description: Get the image metadata
     triggeredBy:
       - Image.Create.Post
+      - Image.Update.Post
