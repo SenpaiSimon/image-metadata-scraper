@@ -1,0 +1,18 @@
+name: Metadata from Image Scraper
+# requires: PythonDepManager
+description: Scraper Metadata from images and add them
+version: 1.0.0
+exec:
+  - python
+  - "{pluginDir}/image_metadata_scraper.py"
+interface: raw
+tasks:
+  - name: Find all missing metadata
+    description: Try to find metadata in images and add it
+    defaultArgs:
+      mode: find
+hooks:
+  - name: hook_image_created
+    description: Get the image metadata
+    triggeredBy:
+      - Image.Create.Post
