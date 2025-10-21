@@ -1,4 +1,4 @@
-from PythonDepManager import ensure_import # type: ignore
+#from PythonDepManager import ensure_import # type: ignore
 ensure_import("piexif==1.1.3")
 ensure_import("stashapi:stashapp-tools>=0.2.58")
 import os
