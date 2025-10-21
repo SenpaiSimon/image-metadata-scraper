@@ -1,6 +1,6 @@
-#from PythonDepManager import ensure_import # type: ignore
-#ensure_import("piexif==1.1.3")
-#ensure_import("stashapi:stashapp-tools>=0.2.58")
+from PythonDepManager import ensure_import
+ensure_import("piexif==1.1.3")
+ensure_import("stashapi:stashapp-tools>=0.2.58")
 import os
 #from pickle import TRUE
 import sys, json
