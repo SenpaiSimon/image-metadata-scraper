@@ -3,7 +3,6 @@ name: Metadata from Image Scraper
 description: Scraper Metadata from images and add them
 version: 1.0.0
 exec:
-  - source /root/.stash/venv/bin/activate &&
   - python
   - "{pluginDir}/image_metadata_scraper.py" 
 interface: raw

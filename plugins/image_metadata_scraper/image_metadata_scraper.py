@@ -73,7 +73,7 @@ def getMetadataFromImage(imageID):
 
 def getMetadataFromImages():
     images = stash.find_images(f={
-        "date": {
+        "url": {
             "modifier": "IS_NULL",
             "value": ""
         },
@@ -83,7 +83,7 @@ def getMetadataFromImages():
         }
         },fragment="id")
     tasks = len(images)
-    log.info(f"Found {tasks} images with no date")
+    log.info(f"Found {tasks} images with no url")
     prog = 0
     for id in images:
         getMetadataFromImage(id["id"])
