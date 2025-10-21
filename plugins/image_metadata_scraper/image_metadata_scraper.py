@@ -65,7 +65,7 @@ def getMetadataFromImage(imageID):
                             })
             except Exception as e:
                 log.info(f"Metadata extraction error: {e}")
-        if date:
+
             stash.update_image({
                 tagsToAdd
             })
